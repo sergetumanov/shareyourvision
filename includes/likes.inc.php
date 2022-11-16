@@ -35,12 +35,12 @@
 
       // SUCCESS: Post is saved to "posts" table - redirect with success message
       header("Location: ../posts.php?like=success"); 
-      exit();
+      exit(); 
     }
 
   // Restrict Access to Script Page
   } else {
     header("Location: ../signup.php");
     exit();
-  }
+  } 
 ?>
