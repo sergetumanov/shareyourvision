@@ -42,5 +42,5 @@
   } else {
     header("Location: ../signup.php");
     exit();
-  }
+  } 
 ?>
