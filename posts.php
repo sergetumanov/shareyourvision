@@ -57,8 +57,16 @@
                   <div class="admin-btn">
                     <a href="editpost.php?id=' . $row['id'] . '" class="btn btn-secondary mt-2 editBtn">Edit</a>
                     <a href="includes/deletepost.inc.php?id=' . $row['id'] . '" class="btn btn-danger mt-2 deleteBtn">Delete</a>
+
+
+
+
+
+
+
                     
-                  </div><div class="clear"></div>';
+                    <a href="includes/likes.inc.php?id=' . $row['id'] . '" class="btn btn-success mt-2 likeBtn">Like</a>';
+                    '</div><div class="clear"></div>';
                 }
 
             $output .= 
