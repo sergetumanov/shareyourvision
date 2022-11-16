@@ -14,8 +14,8 @@
     $error_msg = 'The file already exists!';
       echo '<div class="alert alert-danger" role="alert">' . $error_msg . '</div>';
     }
-  if(isset($_GET['emptyfields'])){
-    $error_msg = '';
+  if(isset($_GET['error'])){
+    $error_msg = 'Please fill the TITLE and COMMENTS';
       echo '<div class="alert alert-danger" role="alert">' . $error_msg . '</div>';
     }
 ?>
@@ -23,7 +23,6 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-8">
-
     <!-- File Upload Form: START -->
     <form action="includes/upload.inc.php" method="POST" enctype="multipart/form-data" id="uploadPage">
       <!-- 1. TITLE -->
